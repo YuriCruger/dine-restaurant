@@ -1,0 +1,98 @@
+{
+  "heroSection": {
+    "content": {
+      "title": "Exquisite dining since 1989",
+      "description": "Experience our seasonal menu in beautiful country surroundings. Eat thefreshest produce from the comfort of our farmhouse."
+    },
+    "image": {
+      "desktop": {
+        "src": "/images/hero-section-home-desktop.jpg",
+        "alt": "shrimp dish"
+      },
+      "mobile": {
+        "src": "/images/hero-section-home-mobile.jpg",
+        "alt": "shrimp dish"
+      }
+    }
+  },
+  "restaurantExperience": {
+    "familyDiningExperience": {
+      "title": "Enjoyable place for all the family",
+      "description": "Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal."
+    },
+    "localSourcingExperience": {
+      "title": "The most locally sourced food",
+      "description": "All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food."
+    }
+  },
+  "menuHighlights": {
+    "content": {
+      "title": "A few highlights from our menu",
+      "description": "We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season."
+    },
+    "dishcards": [
+      {
+        "image": {
+          "src": "/images/highlight-salmon.jpg",
+          "alt": "salmon"
+        },
+        "title": "Seared Salmon Fillet",
+        "description": "Our locally sourced salmon served with a refreshing buckwheat summer salad."
+      },
+      {
+        "image": {
+          "src": "/images/highlight-beef.jpg",
+          "alt": "beef"
+        },
+        "title": "Rosemary Filet Mignon",
+        "description": "Our prime beef served to your taste with a delicious choice of seasonal sides."
+      },
+      {
+        "image": {
+          "src": "/images/highlight-chocolate.jpg",
+          "alt": "chocolate"
+        },
+        "title": "Summer Fruit Chocolate Mousse",
+        "description": "Creamy mousse combined with summer fruits and dark chocolate shavings."
+      }
+    ]
+  },
+  "specialOcassions": [
+    {
+      "name": "Family Gathering",
+      "description": "We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.",
+      "image": {
+        "src": "/images/event-family.jpg",
+        "alt": "Family Gathering"
+      }
+    },
+    {
+      "name": "Special Events",
+      "description": "Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal.",
+      "image": {
+        "src": "/images/event-special.jpg",
+        "alt": "Special Events"
+      }
+    },
+    {
+      "name": "Social Events",
+      "description": "Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.",
+      "image": {
+        "src": "/images/event-social.jpg",
+        "alt": "Social Events"
+      }
+    }
+  ],
+  "booking": {
+    "title": "Reservations",
+    "description": "We can’t wait to host you. If you have any special requirements pleasefeel free to call on the phone number below. We’ll be happy toaccommodate you."
+  },
+  "restaurantInfo": {
+    "contact": ["marthwaite, sedbergh", "cumbria", "+00 44 123 4567"],
+    "businessHours": [
+      "open times",
+      "mon - fri: 09:00 am - 10:00 pm",
+      "sat - sun: 09:00 am - 11:30 pm"
+    ]
+  }
+}
