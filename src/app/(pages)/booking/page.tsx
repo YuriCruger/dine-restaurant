@@ -1,19 +1,19 @@
-import Link from "next/link";
+import Link from 'next/link'
 
-import { Form } from "./components/form";
-import { Modal } from "./components/modal";
+import { Form } from './components/form'
+import { Modal } from './components/modal'
 
-import { Button } from "@/components/button";
+import { Button } from '@/components/button'
 
-import data from "@/data.json";
+import data from '@/data.json'
 
 export default function Booking() {
-  const { title, description } = data.booking;
+  const { title, description } = data.booking
 
   return (
     <div className="flex flex-col flex-grow bg-white">
       <section className="p-sm flex flex-col items-center text-center gap-5 bg-booking-mobile bg-no-repeat bg-cover bg-top w-full h-[600px] sm:bg-booking-tablet lg:bg-booking-desktop lg:text-start lg:items-start 2xl:px-lg">
-        <Link href={"/"}>
+        <Link href={'/'}>
           <h1 className="text-6xl ">dine</h1>
         </Link>
 
@@ -28,5 +28,5 @@ export default function Booking() {
 
       <Modal />
     </div>
-  );
+  )
 }

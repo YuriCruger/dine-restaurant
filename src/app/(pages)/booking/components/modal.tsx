@@ -1,22 +1,22 @@
-"use client";
+'use client'
 
-import { Button } from "@/components/button";
-import { TextRestaurantInfo } from "@/components/text-restaurant-info";
+import { Button } from '@/components/button'
+import { TextRestaurantInfo } from '@/components/text-restaurant-info'
 
-import { useReservation } from "@/contexts/reservation-context";
+import { useReservation } from '@/contexts/reservation-context'
 
-import { ModalReservationInfo } from "./modal-reservation-info";
+import { ModalReservationInfo } from './modal-reservation-info'
 
-import data from "@/data.json";
+import data from '@/data.json'
 
 export function Modal() {
-  const { reservationDetails, setReservationDetails } = useReservation();
+  const { reservationDetails, setReservationDetails } = useReservation()
 
   if (!reservationDetails) {
-    return null;
+    return null
   }
 
-  const restaurantInfo = data.restaurantInfo;
+  const restaurantInfo = data.restaurantInfo
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-sm">
@@ -53,5 +53,5 @@ export function Modal() {
         />
       </div>
     </div>
-  );
+  )
 }

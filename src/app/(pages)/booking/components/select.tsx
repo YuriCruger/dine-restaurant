@@ -1,14 +1,14 @@
-import { forwardRef, SelectHTMLAttributes } from "react";
+import { forwardRef, SelectHTMLAttributes } from 'react'
 
 type SelectProps = SelectHTMLAttributes<HTMLSelectElement> & {
-  options: (string | number)[];
-  placeholder: string;
-};
+  options: (string | number)[]
+  placeholder: string
+}
 
 export const Select = forwardRef<HTMLSelectElement, SelectProps>(
   ({ options, placeholder, value, ...props }, ref) => {
     const emptyValueTextColor =
-      value === "" ? "text-mediumGray" : "text-almostBlack";
+      value === '' ? 'text-mediumGray' : 'text-almostBlack'
 
     return (
       <select
@@ -27,6 +27,6 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
           </option>
         ))}
       </select>
-    );
-  }
-);
+    )
+  },
+)

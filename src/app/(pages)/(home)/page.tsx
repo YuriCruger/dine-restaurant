@@ -1,8 +1,8 @@
-import { ReadyBooking } from "./components/ready-booking";
-import { HeroSection } from "./components/hero-section";
-import { RestaurantExperience } from "./components/restaurant-experience";
-import { MenuHighlights } from "./components/menu-highlights";
-import { SpecialOccasions } from "./components/special-occasions";
+import { ReadyBooking } from './components/ready-booking'
+import { HeroSection } from './components/hero-section'
+import { RestaurantExperience } from './components/restaurant-experience'
+import { MenuHighlights } from './components/menu-highlights'
+import { SpecialOccasions } from './components/special-occasions'
 
 export default function Home() {
   return (
@@ -13,5 +13,5 @@ export default function Home() {
       <SpecialOccasions />
       <ReadyBooking />
     </>
-  );
+  )
 }

@@ -1,10 +1,10 @@
-import { Footer } from "@/components/footer";
-import { ReservationProvider } from "@/contexts/reservation-context";
+import { Footer } from '@/components/footer'
+import { ReservationProvider } from '@/contexts/reservation-context'
 
 export default function RootPages({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <ReservationProvider>
@@ -13,5 +13,5 @@ export default function RootPages({
         <Footer />
       </div>
     </ReservationProvider>
-  );
+  )
 }

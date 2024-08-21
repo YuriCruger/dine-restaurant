@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import { ReservationSchema } from "@/app/(pages)/booking/components/form";
+import { ReservationSchema } from '@/app/(pages)/booking/components/form'
 import {
   Dispatch,
   ReactNode,
@@ -8,42 +8,42 @@ import {
   createContext,
   useContext,
   useState,
-} from "react";
+} from 'react'
 
 interface ReservationContextType {
-  handlePersonIncrement: () => void;
-  handlePersonDecrement: () => void;
-  currentPeople: number;
-  handleMakeReservation: (formData: ReservationSchema) => void;
-  reservationDetails: ExtendedReservationSchema | null;
+  handlePersonIncrement: () => void
+  handlePersonDecrement: () => void
+  currentPeople: number
+  handleMakeReservation: (formData: ReservationSchema) => void
+  reservationDetails: ExtendedReservationSchema | null
   setReservationDetails: Dispatch<
     SetStateAction<ExtendedReservationSchema | null>
-  >;
+  >
 }
 
 export type ExtendedReservationSchema = ReservationSchema & {
-  currentPeople: number;
-};
+  currentPeople: number
+}
 
-const ReservationContext = createContext({} as ReservationContextType);
+const ReservationContext = createContext({} as ReservationContextType)
 
 export function ReservationProvider({ children }: { children: ReactNode }) {
-  const [currentPeople, setCurrentPeople] = useState(1);
+  const [currentPeople, setCurrentPeople] = useState(1)
   const [reservationDetails, setReservationDetails] =
-    useState<ExtendedReservationSchema | null>(null);
+    useState<ExtendedReservationSchema | null>(null)
 
   const handleMakeReservation = (formData: ReservationSchema) => {
     setReservationDetails({
       ...formData,
       currentPeople,
-    });
-  };
+    })
+  }
 
   const handlePersonIncrement = () =>
-    setCurrentPeople((prevState) => prevState + 1);
+    setCurrentPeople((prevState) => prevState + 1)
 
   const handlePersonDecrement = () =>
-    setCurrentPeople((prevState) => (prevState > 1 ? prevState - 1 : 1));
+    setCurrentPeople((prevState) => (prevState > 1 ? prevState - 1 : 1))
 
   return (
     <ReservationContext.Provider
@@ -58,7 +58,7 @@ export function ReservationProvider({ children }: { children: ReactNode }) {
     >
       {children}
     </ReservationContext.Provider>
-  );
+  )
 }
 
-export const useReservation = () => useContext(ReservationContext);
+export const useReservation = () => useContext(ReservationContext)

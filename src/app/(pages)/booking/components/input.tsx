@@ -1,6 +1,6 @@
-import { ComponentProps, forwardRef } from "react";
+import { ComponentProps, forwardRef } from 'react'
 
-export const Input = forwardRef<HTMLInputElement, ComponentProps<"input">>(
+export const Input = forwardRef<HTMLInputElement, ComponentProps<'input'>>(
   ({ value, ...props }, ref) => {
     return (
       <input
@@ -10,6 +10,6 @@ export const Input = forwardRef<HTMLInputElement, ComponentProps<"input">>(
         ref={ref}
         {...props}
       />
-    );
-  }
-);
+    )
+  },
+)

@@ -1,4 +1,4 @@
-import Image, { ImageProps } from "next/image";
+import Image, { ImageProps } from 'next/image'
 
 export function HeroSectionImage({ src, alt, ...props }: ImageProps) {
   return (
@@ -11,5 +11,5 @@ export function HeroSectionImage({ src, alt, ...props }: ImageProps) {
       className="mx-auto"
       {...props}
     />
-  );
+  )
 }

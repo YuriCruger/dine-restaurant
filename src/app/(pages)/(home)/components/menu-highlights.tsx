@@ -1,11 +1,11 @@
-import { Separator } from "@/components/separator";
+import { Separator } from '@/components/separator'
 
-import { DishCard } from "./dish-card";
+import { DishCard } from './dish-card'
 
-import data from "@/data.json";
+import data from '@/data.json'
 
 export function MenuHighlights() {
-  const { content, dishcards } = data.menuHighlights;
+  const { content, dishcards } = data.menuHighlights
 
   return (
     <section className="flex flex-col items-center bg-almostBlack p-sm xl:flex-row xl:items-start xl:pt-lg 2xl:px-lg xl:gap-20 xl:justify-between">
@@ -29,5 +29,5 @@ export function MenuHighlights() {
         ))}
       </div>
     </section>
-  );
+  )
 }

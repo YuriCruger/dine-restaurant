@@ -1,11 +1,11 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 type Props = {
-  src: string;
-  alt: string;
-  title: string;
-  description: string;
-};
+  src: string
+  alt: string
+  title: string
+  description: string
+}
 
 export function DishCard({ src, alt, title, description }: Props) {
   return (
@@ -25,5 +25,5 @@ export function DishCard({ src, alt, title, description }: Props) {
         </p>
       </div>
     </div>
-  );
+  )
 }

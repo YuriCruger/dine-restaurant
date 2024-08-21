@@ -1,5 +1,5 @@
-import { Button } from "@/components/button";
-import Link from "next/link";
+import { Button } from '@/components/button'
+import Link from 'next/link'
 
 export function ReadyBooking() {
   return (
@@ -8,12 +8,12 @@ export function ReadyBooking() {
         Ready to make a reservation?
       </p>
 
-      <Link href={"/booking"} className="w-full max-w-64">
+      <Link href={'/booking'} className="w-full max-w-64">
         <Button
           title="book a table"
           className="bg-transparent hover:border-white"
         />
       </Link>
     </section>
-  );
+  )
 }

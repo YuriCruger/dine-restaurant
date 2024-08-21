@@ -1,15 +1,15 @@
-import { ComponentProps } from "react";
-import Image from "next/image";
-import { twMerge } from "tailwind-merge";
+import { ComponentProps } from 'react'
+import Image from 'next/image'
+import { twMerge } from 'tailwind-merge'
 
-import Lines from "../../../../../public//lines.svg";
-import { Separator } from "@/components/separator";
+import Lines from '../../../../../public//lines.svg'
+import { Separator } from '@/components/separator'
 
-type Props = ComponentProps<"div"> & {
-  title: string;
-  description: string;
-  firstContent?: boolean;
-};
+type Props = ComponentProps<'div'> & {
+  title: string
+  description: string
+  firstContent?: boolean
+}
 
 export function ExperienceCard({
   title,
@@ -19,20 +19,20 @@ export function ExperienceCard({
   ...props
 }: Props) {
   const firstContentImageStyles =
-    "bg-enjoyable-place-mobile md:bg-enjoyable-place-tablet xl:bg-enjoyable-place-desktop -mt-12";
+    'bg-enjoyable-place-mobile md:bg-enjoyable-place-tablet xl:bg-enjoyable-place-desktop -mt-12'
   const secondContentImageStyles =
-    "bg-locally-sourced-mobile md:bg-locally-sourced-tablet xl:bg-locally-sourced-desktop xl:-mb-12 xl:shadow-lg xl:shadow-white/20";
+    'bg-locally-sourced-mobile md:bg-locally-sourced-tablet xl:bg-locally-sourced-desktop xl:-mb-12 xl:shadow-lg xl:shadow-white/20'
 
   const firstContentBackgroundStyles =
-    "xl:-left-[3rem] 2xl:-left-[14rem] rounded-r-md";
+    'xl:-left-[3rem] 2xl:-left-[14rem] rounded-r-md'
   const secondContentBackgroundStyles =
-    "xl:-right-[3rem] 2xl:-right-[14rem] rounded-l-md";
+    'xl:-right-[3rem] 2xl:-right-[14rem] rounded-l-md'
 
   return (
     <div
       className={twMerge(
-        "relative flex flex-col items-center gap-5 xl:flex-row",
-        className
+        'relative flex flex-col items-center gap-5 xl:flex-row',
+        className,
       )}
       {...props}
     >
@@ -67,5 +67,5 @@ export function ExperienceCard({
         <p className="text-darkCian md:text-xl xl:text-2xl">{description}</p>
       </div>
     </div>
-  );
+  )
 }

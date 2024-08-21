@@ -1,10 +1,10 @@
-import { FooterInfoContainer } from "./footer-info-container";
-import { TextRestaurantInfo } from "./text-restaurant-info";
+import { FooterInfoContainer } from './footer-info-container'
+import { TextRestaurantInfo } from './text-restaurant-info'
 
-import data from "@/data.json";
+import data from '@/data.json'
 
 export function Footer() {
-  const restaurantInfo = data.restaurantInfo;
+  const restaurantInfo = data.restaurantInfo
 
   return (
     <footer className="flex flex-col items-center text-center gap-5 p-5 bg-almostBlack md:flex-row md:justify-between lg:p-10">
@@ -24,5 +24,5 @@ export function Footer() {
         </FooterInfoContainer>
       </div>
     </footer>
-  );
+  )
 }

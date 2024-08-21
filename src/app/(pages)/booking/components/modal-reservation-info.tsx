@@ -1,7 +1,7 @@
 type Props = {
-  label: string;
-  value: string;
-};
+  label: string
+  value: string
+}
 
 export function ModalReservationInfo({ label, value }: Props) {
   return (
@@ -9,5 +9,5 @@ export function ModalReservationInfo({ label, value }: Props) {
       <span>{label}:</span>
       <span className="lowercase">{value}</span>
     </div>
-  );
+  )
 }
